@@ -21,10 +21,11 @@ This project centers around the creation of short animations using Python script
 <p style="align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_twinkle_1.gif" width="40%"/>
 </p>
+<p>Look closely... They're twinklin'.</p>
 
 ## Snow/Rain
 <p style="align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow2.gif" width="40%"/>
   <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow3.gif" width="40%"/>
 </p>
-
+<p>Probably more on the snow end of the spectrum.</p>
