@@ -3,6 +3,13 @@ This project centers around the creation of short animations using Python script
 
 <b>Note: This repo is under construction. I need to organize it better and add the code for each example, but I've gone ahead and made this public to show the results.</b>
 
+## Bubbles
+<p style="text-align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles1.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift_1.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_shake.gif" width="40%"/>
+</p>
 
 ## Cool Stuff with Sine Waves
 <p style="align:center">
@@ -10,7 +17,7 @@ This project centers around the creation of short animations using Python script
   <img src="https://github.com/gaw1ik/visualizers/blob/master/sine/test4.gif" width="40%"/>
 </p>
 
-## Stars
+## Twinkly Stars
 <p style="align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_twinkle_1.gif" width="40%"/>
 </p>
@@ -19,13 +26,5 @@ This project centers around the creation of short animations using Python script
 <p style="align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow2.gif" width="40%"/>
   <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow3.gif" width="40%"/>
-</p>
-
-## Bubbles
-<p style="align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles1.gif" width="40%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift.gif" width="40%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift_1.gif" width="40%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_shake.gif" width="40%"/>
 </p>
 
