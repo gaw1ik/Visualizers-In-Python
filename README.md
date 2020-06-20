@@ -1,6 +1,31 @@
 # Animations for Music Visualizers
 This project centers around the creation of short animations using Python script. One of the primary goals for these animations is to be used as clips for music visualizers, but the animations can also be used to create standalone GIFs or videos. 
 
+<b>Note: This repo is under construction. I need to organize it better and add the code for each example, but I've gone ahead and made this public to show the results.</b>
+
+
+## Cool Stuff with Sine Waves
 <p style="align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars_twinkle_1.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/sine/test3.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/sine/test4.gif" width="40%"/>
 </p>
+
+## Stars
+<p style="align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_twinkle_1.gif" width="40%"/>
+</p>
+
+## Snow/Rain
+<p style="align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow2.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow3.gif" width="40%"/>
+</p>
+
+## Bubbles
+<p style="align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles1.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift_1.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_shake.gif" width="40%"/>
+</p>
+
