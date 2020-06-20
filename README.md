@@ -17,6 +17,12 @@ This project centers around the creation of short animations using Python script
   <img src="https://github.com/gaw1ik/visualizers/blob/master/sine/test4.gif" width="40%"/>
 </p>
 
+## Electricity/Lightning
+<p style="align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/electricity-lightning/6.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/electricity-lightning/7.gif" width="40%"/>
+</p>
+
 ## Twinkly Stars
 <p>Look closely... They're twinklin'.</p>
 <p style="align:center">
