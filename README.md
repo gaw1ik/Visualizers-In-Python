@@ -1,4 +1,4 @@
-# Animations for Music Visualizers
+# Python GIF Animations
 This project centers around the creation of short animations using Python script. One of the primary goals for these animations is to be used as clips for music visualizers, but the animations can also be used to create standalone GIFs or videos. 
 
 <b>Note: This repo is under construction. I need to organize it better and add the code for each example, but I've gone ahead and made this public to show the results.</b>
