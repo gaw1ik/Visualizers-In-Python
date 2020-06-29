@@ -5,10 +5,10 @@ This project centers around the creation of short animations using Python script
 
 ## Bubbles
 <p style="text-align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles1.gif" width="40%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift.gif" width="40%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_drift_1.gif" width="40%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/random_bubbles_shake.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_1.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_2.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_drift_1.gif" width="40%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_shake_1.gif" width="40%"/>
 </p>
 
 ## Cool Stuff with Sine Waves
