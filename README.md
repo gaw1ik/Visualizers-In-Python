@@ -13,6 +13,13 @@ The bubble animations make use of the PIL library which allows for drawing of di
   <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_shake_1.gif" width="24%"/>
 </p>
 
+## Twinkly Stars
+<p>Look closely... They're twinklin'.</p>
+<p style="align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_1.gif" width="100%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_2.gif" width="100%"/>
+</p>
+
 ## Cool Stuff with Sine Waves
 <p style="align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/sine/test3.gif" width="24%"/>
@@ -25,11 +32,7 @@ The bubble animations make use of the PIL library which allows for drawing of di
   <img src="https://github.com/gaw1ik/visualizers/blob/master/electricity-lightning/7.gif" width="24%"/>
 </p>
 
-## Twinkly Stars
-<p>Look closely... They're twinklin'.</p>
-<p style="align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_1.gif" width="100%"/>
-</p>
+
 
 ## Snow/Rain
 <p>Probably more on the snow end of the spectrum.</p>
