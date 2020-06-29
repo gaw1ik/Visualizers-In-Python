@@ -28,7 +28,7 @@ The bubble animations make use of the PIL library which allows for drawing of di
 ## Twinkly Stars
 <p>Look closely... They're twinklin'.</p>
 <p style="align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_twinkle_1.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_1.gif" width="100%"/>
 </p>
 
 ## Snow/Rain
