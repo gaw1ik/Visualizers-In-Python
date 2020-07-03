@@ -30,7 +30,7 @@ for f in range(nframes):
 images = []
 circles = []
 r0s = [1]
-grows = [2]
+grows = [5]
 ms = [-0.5,0,0.5]
 colr = 255
 colg = 255

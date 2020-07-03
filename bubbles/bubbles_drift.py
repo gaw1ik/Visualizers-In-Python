@@ -35,6 +35,9 @@ circles = []
 r0s = [3,4,5,6,7,8,9]
 grows = [5,6,7]
 m = 10
+colr = 255
+colg = 200
+colb = 170
 
 bub_chance = [0,0,0,0,1]
 
@@ -55,7 +58,7 @@ for f in frames:
         circles.append([x1,y1,x2,y2])
         
     for i, xy in enumerate(circles, 1):
-        colr,colg,colb = choice(col_seq),choice(col_seq),choice(col_seq)
+        # colr,colg,colb = choice(col_seq),choice(col_seq),choice(col_seq)
         draw = ImageDraw.Draw(im)
         draw.ellipse(xy,outline=(colr,colg,colb))
         grow = choice(grows)
