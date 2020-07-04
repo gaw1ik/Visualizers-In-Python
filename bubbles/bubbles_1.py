@@ -44,7 +44,7 @@ r0s = [1]
 grows = [2]
 ms = [-0.5,0,0.5]
 
-bub_chance = [0]*25
+bub_chance = [0]*8
 bub_chance.append(1)
 
 col_seq = np.arange(150,260,5)
@@ -52,6 +52,8 @@ col_seq = np.arange(150,260,5)
 bubbles = []
 
 seed(1)
+
+pop = 0
 
 blank = np.zeros([s, s, 3],dtype=np.uint8) # blank frame
 
@@ -67,8 +69,9 @@ for f in frames:
         color = (choice(col_seq),choice(col_seq),choice(col_seq))
         new_bubble = bubble([cx,cy],r0,color)
         bubbles.append(new_bubble)
-        
-    for _, bubb in enumerate(bubbles, 1):
+          
+    toobig = []
+    for i, bubb in enumerate(bubbles, 1): # update attributes of bubbles
         
         r  = bubb.radius
         cx = bubb.center[0]
@@ -87,6 +90,13 @@ for f in frames:
         mx = m
         my = m
         bubb.center = [cx+mx,cy+my]
+        
+        if r>s/1.5:
+            pop = 1
+            toobig.append(i-1)
+    
+    if pop==1:
+        for j in toobig: del bubbles[j]
 
     images.append(im)
 
