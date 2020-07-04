@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Jul  4 12:05:06 2020
+Created on Sat Jul  4 14:37:17 2020
 
 @author: Brian
 """
@@ -44,7 +44,7 @@ r0s = [1]
 grows = [2]
 ms = [-0.5,0,0.5]
 
-bub_chance = [0]*8
+bub_chance = [0]*5
 bub_chance.append(1)
 
 col_seq = np.arange(150,260,5)
@@ -54,6 +54,8 @@ bubbles = []
 seed(1)
 
 pop = 0
+
+d = 0.6
 
 blank = np.zeros([s, s, 3],dtype=np.uint8) # blank frame
 
@@ -91,13 +93,16 @@ for f in frames:
         my = m
         bubb.center = [cx+mx,cy+my]
         
-        if r>s/1.5:
+        if bubb.color[0]<10:
             pop = 1
             toobig.append(i-1)
+        if r>s/2:
+            bubb.radius = r*1.05
+            bubb.color = (np.uint8(bubb.color[0]*d), np.uint8(bubb.color[1]*d), np.uint8(bubb.color[2]*d))
     
     if pop==1:
         for j in toobig: del bubbles[j]
-
+            
     images.append(im)
 
 #%% Save as GIF

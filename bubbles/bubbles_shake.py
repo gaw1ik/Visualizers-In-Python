@@ -83,9 +83,8 @@ for f in frames:
         grow = choice(grows)
         bubb.radius = r + grow
 
-        m = choice(ms)
-        mx = m
-        my = m
+        mx = choice(ms)
+        my = choice(ms)
         bubb.center = [cx+mx,cy+my]
         color = (choice(col_seq),choice(col_seq),choice(col_seq))
         bubb.color = color
