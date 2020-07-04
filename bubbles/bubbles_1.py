@@ -92,7 +92,7 @@ for f in frames:
 
 #%% Save as GIF
     
-images[0].save('bubbles_1_OOP.gif',
+images[0].save('bubbles_1.gif',
                save_all=True,
                append_images=images[1:],
                optimize=False,
