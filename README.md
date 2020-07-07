@@ -3,8 +3,8 @@
 <p style="text-align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_2.gif" width="24%"/>
    <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_4.gif" width="24%"/>  
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_1.gif" width="24%"/>  
   <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_drift.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_1.gif" width="24%"/>   
 </p>
 
 This project centers around the creation of short animations using Python script. One of the primary goals for these animations is to be used as clips for music visualizers, but the animations can also be used to create standalone GIFs or videos. 
