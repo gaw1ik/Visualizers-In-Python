@@ -30,25 +30,11 @@ In the stars animation, a random distribution of small circles is created and us
 
 This script uses the pycairo library, which I wanted to try instead of PIL and Skimage because it is built on fractional units (e.g. circle radius is set to a fraction of the overall canvas width), which can make resizing things very convenient. However, I still make use of PIL, because the final conversion to GIF uses PIL. Thus, I needed a way to convert cairo surfaces to PIL images. I made use of a function found here: http://www.casualhacker.net/post/2013-06-02-convert-pycairo-argb32-surface-to-pil-rgb-image/. Also note that Pycairo was somewhat difficult to install. I might add some instructions for that. it was something I did a long time ago.
 
-
-
-## Cool Stuff with Sine Waves
-<p style="align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/sine/test3.gif" width="24%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/sine/test4.gif" width="24%"/>
-</p>
-
-## Electricity/Lightning
-<p style="align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/electricity-lightning/6.gif" width="24%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/electricity-lightning/7.gif" width="24%"/>
-</p>
-
-
-
 ## Snow/Rain
 <p>Probably more on the snow end of the spectrum.</p>
 <p style="align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow2.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow3.gif" width="24%"/>
   <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow2.gif" width="24%"/>
   <img src="https://github.com/gaw1ik/visualizers/blob/master/snow-rain/snow3.gif" width="24%"/>
 </p>
