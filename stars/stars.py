@@ -22,39 +22,47 @@ from random import seed, choice, random
 
 #%% Inputs
 
-filename = 'stars_4.gif'
+filename = 'stars_1.gif'
 
+# GIF Options
 s = 1 # width and height of frame
-nframes = 100 # number of frames
+nframes = 200 # number of frames
+frame_duration = 1000/24*3
+pixel_scale = 400
 
-seed_number = 5
-
-pixel_scale = 200
-
+# Size/Arrangement Options
+seed_number = 8
 n_stars = 50
+r_seq = np.arange(0.0010,0.0040,0.0001)*2.5# choice sequence for initial radii
+# r_seq = [0.010]*50 + [0.030]*20 + [0.140]*5
 
-r_seq = np.arange(0.0010,0.0030,0.0001)*10# choice sequence for initial radii
+# Twinlke Options
+# bright_seq = np.arange(0.6, 0.8, 0.05)
+bright_seq = [0.8]*5 + [1]
+# bright_seq = [1]
 
-bright_seq = np.arange(0.6, 0.8, 0.05)
+# Jitter Options
+jitter_mode = 'jitter'
+jit_size = 0.0005
+jit_seq = [-jit_size] + [0] + [jit_size]
 
-mx, my = 0, 0 # this sets the motion directory
-
-jit_size = 0.01
-
-# color_mode = 'constant' 
-# color_const = [255,255,210]
-
-const_color = [0.5,1,1]
+# Color Options
+color_mode = 'constant' 
+fill_mode = 'fill'
+line_thickness = 0.01
+color_const = [1,1,0.8]
+c_seq = np.arange(0.5,1.05,0.05)
 
 #%%
 
-# def choose_color(color_mode):
-#     if color_mode=='constant':
-#         color = color_const # some constant color
-#     elif color_mode=='random':
-#         c_seq = np.arange(150,260,5)
-#         color = [choice(c_seq),choice(c_seq),choice(c_seq)]
-#     return color
+def choose_color(color_mode,c_seq):
+    if color_mode=='constant':
+        b = choice([0.3,0.6,1.0])
+        color = [color_const[0]*b,color_const[1]*b,color_const[2]*b] # some constant color
+    elif color_mode=='random':
+        # c_seq = np.arange(0.5,1.05,0.05)
+        color = [choice(c_seq),choice(c_seq),choice(c_seq)]
+    return color
 
     
 #%% Make star Class
@@ -62,39 +70,39 @@ const_color = [0.5,1,1]
 class star:
     
     # Initializer / Instance Attributes
-    def __init__(self, center, radius, color):
+    def __init__(self, base_center, radius, base_color):
         
-        self.center = center
+        self.base_center = base_center
+        self.inst_center = base_center
         self.radius = radius
-        self.color  = color        
+        self.base_color = base_color 
+        self.inst_color = base_color
         
-    def draw(self,ctx):
+    def draw(self,ctx,fill_mode):
         
-        ctx.set_source_rgb(self.color[0], self.color[1], self.color[2])
-        ctx.arc(self.center[0], self.center[1], self.radius, 0, 2*math.pi)
-        # ctx.fill()
-        ctx.set_line_width(0.004)
-        ctx.stroke()
+        ctx.set_source_rgb(self.inst_color[0], self.inst_color[1], self.inst_color[2])
+        ctx.arc(self.inst_center[0], self.inst_center[1], self.radius, 0, 2*math.pi)
+        if (fill_mode=='fill'):
+            ctx.fill()
+        elif (fill_mode=='outline'):
+            ctx.set_line_width(line_thickness)
+            ctx.stroke()
         
     def twinkle(self,bright_seq):
         
         b = choice(bright_seq)
-        self.color = [const_color[0]*b, const_color[1]*b, const_color[2]*b]
+        self.inst_color = [self.base_color[0]*b, self.base_color[1]*b, self.base_color[2]*b]
      
-    def jitter(self,jit_size):
-        
-        cx, cy = self.center[0], self.center[1]
-        jit_seq = [-jit_size] + [0]*5 + [jit_size]
-        jit_x = choice(jit_seq)
-        jit_y = choice(jit_seq)
-        self.center = [cx+jit_x, cy+jit_y]        
-        
-    def move(self,mx,my):
-        
-        cx, cy = self.center[0], self.center[1]
-        self.center = [cx+mx, cy+my]
+    def jitter(self,jit_size,jit_seq,jitter_mode):
+        if (jitter_mode=='jitter'):
+            cx, cy = self.base_center[0], self.base_center[1]
+        elif (jitter_mode=='walk'):        
+            cx, cy = self.inst_center[0], self.inst_center[1]
+        jit_x, jit_y = choice(jit_seq), choice(jit_seq)
+        self.inst_center = [cx+jit_x, cy+jit_y]        
 
-#%%
+#%% Function for converting cairo surface to PIL image
+        
 def pilImageFromCairoSurface( surface ):
    cairoFormat = surface.get_format()
    if cairoFormat == cairo.FORMAT_ARGB32:
@@ -127,7 +135,7 @@ for _ in range(n_stars):
     cy = random()*s
     r0 = choice(r_seq)
     b = choice(bright_seq)
-    c0 = [b, b, 0.8*b]
+    c0 = choose_color(color_mode,c_seq)
     # c0 = (np.uint8(choice(c_seq)*255),np.uint8(choice(c_seq)*255),np.uint8(choice(c_seq)*255))
     new_starro = star( [cx, cy], r0, c0 )
     stars.append(new_starro)
@@ -153,16 +161,16 @@ for f in frames:
     for i, starro in enumerate(stars, 1): 
         
         # Draw the star
-        starro.draw(ctx)
+        starro.draw(ctx,fill_mode)
         
         # Twinkle the star
         starro.twinkle(bright_seq)
         
         # Jitter the star for the next frame 
-        starro.jitter(jit_size)
+        starro.jitter(jit_size,jit_seq,jitter_mode)
         
         # Move the star for the next frame
-        starro.move(mx,my)
+        # starro.walk(walk_size)
          
     im = pilImageFromCairoSurface(surface)
     
@@ -174,7 +182,7 @@ images[0].save(filename,
                save_all=True,
                append_images=images[1:],
                optimize=False,
-               duration=1000/24*3,
+               duration=frame_duration,
                loop=0)
 
 print('DONE')
