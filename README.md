@@ -19,9 +19,11 @@ The GIF is structured as a sequence of images containing *nframes* frames. The c
 ## Twinkly Stars
 Look closely... They're twinklin'.
 
-<p style="align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_1.gif" width="100%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_2.gif" width="100%"/>
+<p style="text-align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_1.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_2.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_3.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_4.gif" width="24%"/>
 </p>
 
 In the stars animation, a random distribution of small circles is created and used to initially populate the canvas. The twinkling effect is created by adding a subtle jittering motion and brightness change to each of the stars. The jitter is triggered by adding a value randomly selected (using the choice function) from the list *m_seq* which contains a small negative value, some number of zeros, and a small positive value equal in magnitude to the negative value (e.g. *m_seq* = [-0.001, 0, 0, 0, 0, 0, 0.001]). Since the list has mostly zeros, the stars will mostly not move, but occasionally one of the non-zero values will be selected and the star will jitter. Similarly, the brightness level is randomly selected from a list called *c_seq* which contains values between 0 and 1 (e.g. *c_seq* = [0.6,0.65,0.7]). The instaneous color of each star is then defined as an RGB triplet (c, c, 0.8c) where *c=choice(c_seq)*. The blue value in the RGB triplet is made to be slightly less, so that the stars will all have a slightly yellow tint.
