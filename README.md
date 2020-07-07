@@ -8,8 +8,8 @@ This project centers around the creation of short animations using Python script
 <p style="text-align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_1.gif" width="24%"/>
   <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_2.gif" width="24%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_drift_1.gif" width="24%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_shake_1.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_drift.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_shake.gif" width="24%"/>
 </p>
 
 The bubble animations make use of the PIL library which allows for drawing of different basic shapes such as circles (actually ellipses). In order to get the bubbly effect, small circles are drawn which then grow in size over the remaining duration of the GIF. Each bubble is tracked as its own object instance (of the class bubble) with its own unique set of instantaneous attributes (center location, radius, and color). Note that the PIL draw function accepts top-left and bottom-right coordinates of the ellipse's bounding box, so a conversion is done between center point/radius and these coordinates before drawing is done. 
