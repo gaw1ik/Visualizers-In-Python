@@ -9,7 +9,9 @@
 
 This project centers around the creation of short animations using Python script. One of the primary goals for these animations is to be used as clips for music visualizers, but the animations can also be used to create standalone GIFs or videos. 
 
-Each type of animation (e.g. bubbles) is built on a single script which is written in an object oriented manner. The scripts are highly functionalized, and all the example GIFs you see for each one are made just by changing the parameters in the Inputs section of each script. Each class is pursued with an original concept in mind - like twinkling stars, for instance - but because of the high degree of funcionality, the resulting classes/scripts can produce a much wider range of visual aesthetics. 
+Each type of animation (e.g. bubbles) is built on a single script which is written in an object oriented manner. The scripts are highly functionalized, and all the example GIFs you see for each one are made just by changing the parameters in the Inputs section of each script. The scripts are fully operational simply by making use of the Inputs section (as long as you have all the appropraiate libraries in place). The resulting GIF should save to your current working directory. 
+
+Each class is pursued with an original concept in mind - like twinkling stars, for instance - but because of the high degree of funcionality, the resulting classes/scripts can produce a much wider range of visual aesthetics. 
 
 I think this is a really great foundation for a potential application centered around creating visuals in which the user can select from any number of "sprites" (e.g. bubbles, stars, rain, etc.) and tweak/keyframe a limited, but powerful set of parameters to create really interesting effects, especially for ceating music visualizers! I have used these animations in combination with video editing software with great results. If they aren't cool enough on their own, the ability to time-stretch, zoom, rotate, fade-in/fade-out, etc. makes for incredibly cool visuals. 
 
