@@ -30,7 +30,7 @@ The bubble animations make use of the PIL library which allows for drawing of ba
 
 The GIF is structured as a sequence of images containing *nframes* frames. The code loops through each frame, one at a time, updates the attributes of each bubble in that frame, and then draws each bubble using the draw method. The result is a two-level nested for-loop. Growth is imparted to the bubbles via the grow method which adds an amount *grow* to the bubble radius. Motion is imparted to the bubbles using the method move by adding the amount *mx* and *my* to to the center x and y coordinates respectively. Jitter is added to the bubbles via the jitter method which randomly adds or subtracts the value *jit* to the center coordinates. Bubble color is set for each bubble using the function choose_color. There are two modes which can be used for color assignement: constant, in which all the bubbles have the same color (as defined by the user) or random in which each bubble's color is chosen randomly from a predefined range of colors. Finally, the bubbles can undergo a "popping" animation by using the method pop. This method has the radius quickly increase while the brightness of the bubble outline quickly decreases. Once the brightness has gone below a certain level, the bubble object is deleted entirely, so that fully popped bubbles aren't hanging around taking up unnecessary memory.
 
-## Stars
+## Stars (also planets, orbits, cellular diffusion, etc.) 
 Look closely... They're twinklin'.
 
 <p style="text-align:center">
