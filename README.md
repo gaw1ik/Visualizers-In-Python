@@ -1,7 +1,7 @@
 # Python GIF Animations
 
 <p style="text-align:center">
-   <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_2.gif" width="32%"/>  
+   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_3.gif" width="32%"/>  
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/pulsars_1.gif" width="32%"/> 
   <img src="https://github.com/gaw1ik/visualizers/blob/master/bubbles/bubbles_1.gif" width="32%"/>   
 </p>
