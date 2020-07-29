@@ -8,7 +8,7 @@
 
 This project centers around the creation of short animations (shown here as GIFs) using Python scripts. One of the primary goals for these animations is to be used as clips for music visualizers, but the animations are still pretty interesting as standalone clips. 
 
-Each type of animation (e.g. bubbles) is built on a single script which is written in an object oriented manner. The scripts are highly functionalized, and all the example GIFs you see for each one are made just by changing the parameters in the Inputs section of each script. The scripts are [mostly] operational simply by making use of the Inputs section (as long as you have all the appropraiate libraries in place). The resulting GIF should save to your current working directory under the filename which you define at the top of the Inputs section.  
+Each type of animation (e.g. bubbles) is built on a single script which is written in an object oriented manner and is intended to be usable entirely from the "Inputs" section of the script only. The scripts are highly functionalized, and all the example GIFs you see for each one are made just by changing the input paramaters. The resulting GIF should save to your current working directory under the filename which you define at the top of the Inputs section.  
 
 Many of the classes are pursued with an original concept in mind - like twinkling stars, for instance - but because of the high degree of funcionality in the scripts, the resulting classes can produce a much wider range of visual aesthetics, often completely deviating from the original concept. Furthermore, some of the classes create a visual that is fairly unfamiliar, and as I continue working on the project, I can see the naming becoming more and more difficult.
 
