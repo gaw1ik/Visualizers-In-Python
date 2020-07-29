@@ -1,7 +1,7 @@
 # Python GIF Animations (a work in progress)
 
 <p style="text-align:center">
-   <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_1.gif" width="32%"/>  
+   <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_2.gif" width="32%"/>  
   <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_7.gif" width="32%"/> 
   <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_6.gif" width="32%"/>   
 </p>
