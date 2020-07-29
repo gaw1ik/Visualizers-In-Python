@@ -37,13 +37,16 @@ Look closely... They're twinklin'.
 <p style="text-align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_1.gif" width="24%"/>
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_2.gif" width="24%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_3.gif" width="24%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_4.gif" width="24%"/>
 </p>
 
 In the stars animation, a random distribution of small circles initially populates the canvas from which point the stars can then move around and change brightness. Each "star" is handled as an object with the class star. Stars are defined by attributes such as center, radius, and color. The star class has many methods to animate them including jitter and twinkle. Jitter is responsible for the movement of the stars. It can be set to two modes: "jitter" and "walk". Jitter creates movements around a fixed central point, whereas walk creates a random walk effect. The random walk effect lends itself well to making more of a cellular, atomistic diffusion type visual. Twinkle allows for the brightness of the stars to change throughout the GIF giving that twinkly star effect.
 
 Originally, this script was intended to make something that looked like stars, and stars only, but messing with the input parameters of the script can actually produce a much wider range of visual effects. The stars can become quite "planetary" by allowing for larger circles and also using the random color mode. Furthermore, I added the capability of choosing between outlined circles and filled circles. Choosing the outlined circles produces a cellular visual at times and at other times - particularly when the size distribution is large - can start to look reminiscent of planetary orbits. 
+
+<p style="text-align:center">
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_3.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_4.gif" width="24%"/>
+</p>
 
 This script uses the pycairo library, which I wanted to try instead of PIL and Skimage because it is built on fractional units (e.g. circle radius is set to a fraction of the overall canvas width), which can make resizing things very convenient. Also, the PIL draw function does not do well drawing very small circles. They end up looking like squares, whereas pycairo allows you to draw very small circles. I still make use of PIL, however, because the final conversion to GIF uses PIL. Thus, I needed a way to convert cairo surfaces to PIL images. I made use of a function found here: http://www.casualhacker.net/post/2013-06-02-convert-pycairo-argb32-surface-to-pil-rgb-image/. Also note that Pycairo was somewhat difficult to install. I might add some instructions for that. It was something I did a long time ago.
 
