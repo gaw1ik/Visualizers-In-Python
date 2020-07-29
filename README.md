@@ -1,9 +1,9 @@
 # Python GIF Animations
 
 <p style="text-align:center">
-   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_3.gif" width="32%"/>  
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/pulsars_1.gif" width="32%"/> 
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/pulsars_2.gif" width="32%"/>   
+   <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_1.gif" width="32%"/>  
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_5.gif" width="32%"/> 
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_6.gif" width="32%"/>   
 </p>
 
 This project centers around the creation of short animations using Python script. One of the primary goals for these animations is to be used as clips for music visualizers, but the animations can also be used to create standalone GIFs or videos. 
