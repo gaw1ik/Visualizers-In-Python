@@ -35,8 +35,8 @@ The GIF is structured as a sequence of images containing *nframes* frames. The c
 Look closely... They're twinklin'.
 
 <p style="text-align:center">
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_1.gif" width="24%"/>
-  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_2.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_7.gif" width="49%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_8.gif" width="49%"/>
 </p>
 
 In the stars animation, a random distribution of small circles initially populates the canvas from which point the stars can then move around and change brightness. Each "star" is handled as an object with the class star. Stars are defined by attributes such as center, radius, and color. The star class has many methods to animate them including jitter and twinkle. Jitter is responsible for the movement of the stars. It can be set to two modes: "jitter" and "walk". Jitter creates movements around a fixed central point, whereas walk creates a random walk effect. The random walk effect lends itself well to making more of a cellular, atomistic diffusion type visual. Twinkle allows for the brightness of the stars to change throughout the GIF giving that twinkly star effect.
