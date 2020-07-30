@@ -46,6 +46,8 @@ Originally, this script was intended to make something that looked like stars, a
 <p style="text-align:center">
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_3.gif" width="24%"/>
   <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_4.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_3.gif" width="24%"/>
+  <img src="https://github.com/gaw1ik/visualizers/blob/master/stars/stars_4.gif" width="24%"/>
 </p>
 
 This script uses the pycairo library, which I wanted to try instead of PIL and Skimage because it is built on fractional units (e.g. circle radius is set to a fraction of the overall canvas width), which can make resizing things very convenient. Also, the PIL draw function does not do well drawing very small circles. They end up looking like squares, whereas pycairo allows you to draw very small circles. I still make use of PIL, however, because the final conversion to GIF uses PIL. Thus, I needed a way to convert cairo surfaces to PIL images. I made use of a function found here: http://www.casualhacker.net/post/2013-06-02-convert-pycairo-argb32-surface-to-pil-rgb-image/. Also note that Pycairo was somewhat difficult to install. I might add some instructions for that. It was something I did a long time ago.
