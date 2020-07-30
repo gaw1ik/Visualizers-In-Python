@@ -1,4 +1,4 @@
-# Python GIF Animations (a work in progress)
+# Visulalizers in Python (a work in progress)
 
 <p style="text-align:center">
    <img src="https://github.com/gaw1ik/visualizers/blob/master/pulsars/pulsars_2.gif" width="32%"/>  
